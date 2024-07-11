@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Amigo - Produtos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Cabeçalho */
+      header {
+        background-color: #00c3ff;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Seção de Produtos */
+      .produtos {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 16px;
+      }
+
+      .produto {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 290px;
+      }
+
+      .imagem-produto {
+        object-fit: cover;
+        width: 100%;
+        height: 60%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      .info-produto {
+        padding: 0 24px;
+        text-align: start;
+      }
+
+      .produto-h2 {
+        font-size: 22px;
+      }
+
+      .produto-p {
+        font-size: 16px;
+      }
+
+      /* Formulário de Contato */
+      .formulario {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+      }
+
+      .formulario label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .formulario input,
+      .formulario textarea {
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .formulario button {
+        background-color: #00ff00;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 15%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Pet Amigo</h1>
+      <p>Seu melhor amigo merece o melhor!</p>
+    </header>
+
+    <section class="produtos">
+      <div class="produto">
+        <img
+          src="https://galguinhoitaliano.com.br/wp-content/uploads/2023/09/galgo-italiano-filhote.jpg"
+          alt=""
+          class="imagem-produto"
+        />
+        <div>
+          <h2 class="produto-h2">Ração Premium</h2>
+          <p class="produto-p">
+            Ofereça o melhor para o seu pet com nossa ração premium, feita com
+            ingredientes naturais.
+          </p>
+        </div>
+      </div>
+      <div class="produto">
+        <img
+          src="https://amoraospets.com/wp-content/uploads/2018/11/melhores-brinquedos-para-gatos.jpg"
+          alt=""
+          class="imagem-produto"
+        />
+        <div class="info-produto">
+          <h2>Brinquedos Divertidos</h2>
+          <p>
+            Explore nossa seleção de brinquedos para cães e gatos. Diversão
+            garantida!
+          </p>
+        </div>
+      </div>
+      <div class="produto">
+        <img
+          src="https://img.elo7.com.br/product/zoom/16D5884/macacao-whippet.jpg"
+          alt=""
+          class="imagem-produto"
+        />
+        <div class="info-produto">
+          <h2>Acessórios Fashions</h2>
+          <p>
+            Deixe seu pet na moda com nossos acessórios exclusivos e estilosos.
+          </p>
+        </div>
+      </div>
+      <div class="produto">
+        <img
+          src="https://www.rbsdirect.com.br/filestore/6/4/3/1/8/8/4_e88c270ee715401/4881346_2c96841fa127c9a.jpg?w=1024&h=768&a=c"
+          alt=""
+          class="imagem-produto"
+        />
+        <div class="info-produto">
+          <h2>Suplementos Naturais</h2>
+          <p>
+            Suplementos 100% naturais para a saúde e bem-estar do seu animal de
+            estimação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h2>Entre em Contato</h2>
+      <form action="processar_formulario.php" method="post" class="form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Pet Amigo. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
